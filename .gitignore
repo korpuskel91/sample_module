@@ -28,3 +28,4 @@ bokeh/data/
 bokeh/market_result/
 bokeh/gridfiles/
 __pycache__
+.cache
