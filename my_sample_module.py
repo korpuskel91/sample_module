@@ -1,4 +1,5 @@
 import subprocess
+import json
 
 def sample_function(n):
     print("You entered {}".format(n))
@@ -11,8 +12,14 @@ def sample_function(n):
                 log.write(line.decode())
                 print(line.decode(), end='')
 
-    return True
+    jldata = json.load(open("julia/jldata.json"))
+    check = (jldata["payload"] == 313)
+
+    return check
 
 
 if __name__ == "__main__":
-    sample_function(5)
+    if sample_function(5):
+        print("OK")
+    else:
+        print("ERROR")
