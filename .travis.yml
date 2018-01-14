@@ -13,5 +13,5 @@ script:
   - pytest
 
 after_success:
-  - coverage run .\test_sample.py
+  - coverage run test_sample.py
   - coveralls
