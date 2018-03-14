@@ -18,6 +18,8 @@ def sample_function(n):
     return check
 
 
+# another comment
+
 if __name__ == "__main__":
     if sample_function(5):
         print("OK")
